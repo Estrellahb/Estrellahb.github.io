@@ -32,9 +32,7 @@ li a:hover {
   background-color:whitesmoke;
   background-color: #66ccff;
 }
-.active {
-  background-color: #4CAF50;
-}
+
 
 /* 隐藏侧边栏样式 */
 body {
@@ -67,13 +65,7 @@ body {
     color: #f1f1f1;
   }
   
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
+ 
   
   .openbtn {
     font-size: 20px;
