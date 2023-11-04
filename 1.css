@@ -1,0 +1,35 @@
+ul {
+    width: 75%; /* 矩形的宽度 */
+    height: 50px; /* 矩形的高度 */
+    font-weight: bold; /* 设置字体加粗 */
+    font-family: Arial, sans-serif; /* 选择较圆润的字体 */
+    border-radius: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6db2e1;
+    position: fixed;
+    top: 0;
+    
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*鼠标移动到选项上修改背景颜色 */
+li a:hover {
+  background-color:whitesmoke;
+  background-color: #66ccff;
+}
+.active {
+  background-color: #4CAF50;
+}
