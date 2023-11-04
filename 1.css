@@ -118,7 +118,7 @@ body {
   }
   
   div.transbox {
-    margin: 300px;
+    margin: 300px;/* 调整这个会使背景图片显示问题 */
     background-color: #ffffff;
     border: 1px solid black;
     opacity: 0.4;
@@ -129,6 +129,12 @@ body {
     font-weight: bold;
     color: #000000;
   }
+  body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    /* 边框问题解决了 */
+}
   bo dy {
     background-image: url('img/0_星は眠らず_87652804.png'); /* 设置背景图像的URL */
     background-size: cover; /* 以尽可能大的尺寸覆盖整个页面 */
