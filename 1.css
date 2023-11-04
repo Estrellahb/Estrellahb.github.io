@@ -101,20 +101,12 @@ body {
   /* 结束 */
 
   /* 圆形头像 */
-  .avatar-outer {
-    width: 120px; /* 圆形容器的宽度，包括内边距 */
-    height: 120px; /* 圆形容器的高度，包括内边距 */
-    border-radius: 50%; /* 设置外层边框半径为50%，使其成为圆形 */
-    overflow: hidden; /* 隐藏溢出的部分，确保是圆形 */
-    background-color: #ccc; /* 可选：为外层容器添加背景颜色 */
-    padding: 10px; /* 添加10像素的内边距 */
-    
-  }
   
   .avatar-inner {
-    width: 100%; /* 内层容器充满外层容器 */
-    height: 100%; /* 内层容器充满外层容器 */
-    overflow: hidden;
+    width: 100px; /* 内层容器充满外层容器 */
+    height: 100px; /* 内层容器充满外层容器 */
+    border-radius: 50%; /* 设置外层边框半径为50%，使其成为圆形 */
+    overflow: hidden; /* 隐藏溢出的部分，确保是圆形 */
   }
   
   .avatar-inner img {
@@ -123,11 +115,34 @@ body {
     object-fit: cover; /* 调整图像以填充整个内层容器 */
   }
   
-  body {
+
+  div.background {
+    background: url(img/0_星は眠らず_87652804.png) repeat;
+    border: 2px solid black;
+    background-size: cover; /* 以尽可能大的尺寸覆盖整个页面 */
+    background-attachment:fixed; 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  
+  div.transbox {
+    margin: 300px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.4;
+  }
+  
+  div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+  bo dy {
     background-image: url('img/0_星は眠らず_87652804.png'); /* 设置背景图像的URL */
     background-size: cover; /* 以尽可能大的尺寸覆盖整个页面 */
     background-attachment:fixed; /* 使背景图像固定，随滚动条滚动 */
-    background-color: rgba(0, 0, 0, 0.5); /* 设置背景颜色的透明度为50% */
     background-repeat: no-repeat;
+    opacity: 0.5;
   }
   
