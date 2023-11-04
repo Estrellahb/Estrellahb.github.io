@@ -107,21 +107,12 @@ body {
     object-fit: cover; /* 调整图像以填充整个内层容器 */
   }
   
-
-  div.background {
-    background: url(img/0_星は眠らず_87652804.png) repeat;
-    border: 2px solid black;
-    background-size: cover; /* 以尽可能大的尺寸覆盖整个页面 */
-    background-attachment:fixed; 
-    background-repeat: no-repeat;
-    
-  }
-  
   div.transbox {
-    margin: 300px;/* 调整这个会使背景图片显示问题 */
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: #ffffff;
     border: 1px solid black;
-    opacity: 0.4;
+    opacity: 0.4;/* css中设置透明度，越小越透明，多个嵌套div才有用 */
   }
   
   div.transbox p {
@@ -135,11 +126,11 @@ body {
     overflow: hidden;
     /* 边框问题解决了 */
 }
-  bo dy {
+  body {
     background-image: url('img/0_星は眠らず_87652804.png'); /* 设置背景图像的URL */
     background-size: cover; /* 以尽可能大的尺寸覆盖整个页面 */
     background-attachment:fixed; /* 使背景图像固定，随滚动条滚动 */
     background-repeat: no-repeat;
-    opacity: 0.5;
+    
   }
   
