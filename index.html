@@ -6,21 +6,32 @@
     <title>Document</title>
     <script>
     function openNav() {
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        var sidebar = document.getElementById("mySidebar");
+        var main = document.getElementById("main");
+  
+  if (sidebar.style.width === "250px") {
+    sidebar.style.width = "0";
+    main.style.marginLeft = "0";
+  } else {
+    sidebar.style.width = "250px";
+    main.style.marginLeft = "250px";
+  }
     }
 
-    function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-    }
+    
+
+    
     </script>
     <style></style>
     <link rel="stylesheet" href="1.css" type="text/css">
 </head>
 <body>
     <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="avatar-outer">
+            <div class="avatar-inner">
+              <img src="img/0_パンプキンワゴン_103402622_p2.jpg" alt="">
+            </div>
+          </div>
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Clients</a>
@@ -28,7 +39,7 @@
       </div>
       
       <div id="main">
-        <button class="openbtn" onclick="openNav()">☰ 打开侧边栏</button>  
+        <button class="openbtn" onclick="openNav()">☰</button>  
 
       </div>
       <!-- http://www.w3schools.cn/howto/howto_js_collapse_sidebar.asp -->

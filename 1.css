@@ -11,10 +11,12 @@ ul {
     background-color: #6db2e1;
     position: fixed;
     top: 0;
+    right: 0;
+    text-align: right;
     
 }
 li {
-  float: left;
+    float: right;
 }
 
 li a {
@@ -46,7 +48,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #bde2f4;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -97,3 +99,35 @@ body {
     .sidebar a {font-size: 18px;}
   }
   /* 结束 */
+
+  /* 圆形头像 */
+  .avatar-outer {
+    width: 120px; /* 圆形容器的宽度，包括内边距 */
+    height: 120px; /* 圆形容器的高度，包括内边距 */
+    border-radius: 50%; /* 设置外层边框半径为50%，使其成为圆形 */
+    overflow: hidden; /* 隐藏溢出的部分，确保是圆形 */
+    background-color: #ccc; /* 可选：为外层容器添加背景颜色 */
+    padding: 10px; /* 添加10像素的内边距 */
+    
+  }
+  
+  .avatar-inner {
+    width: 100%; /* 内层容器充满外层容器 */
+    height: 100%; /* 内层容器充满外层容器 */
+    overflow: hidden;
+  }
+  
+  .avatar-inner img {
+    width: 100%; /* 图像充满内层容器 */
+    height: 100%; /* 图像充满内层容器 */
+    object-fit: cover; /* 调整图像以填充整个内层容器 */
+  }
+  
+  body {
+    background-image: url('img/0_星は眠らず_87652804.png'); /* 设置背景图像的URL */
+    background-size: cover; /* 以尽可能大的尺寸覆盖整个页面 */
+    background-attachment:fixed; /* 使背景图像固定，随滚动条滚动 */
+    background-color: rgba(0, 0, 0, 0.5); /* 设置背景颜色的透明度为50% */
+    background-repeat: no-repeat;
+  }
+  
