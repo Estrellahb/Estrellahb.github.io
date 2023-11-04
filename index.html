@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script></script>
+    <script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
     <style></style>
     <link rel="stylesheet" href="1.css" type="text/css">
 </head>
 <body>
-    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">联系方式</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ 打开侧边栏</button>  
+
+      </div>
+      <!-- http://www.w3schools.cn/howto/howto_js_collapse_sidebar.asp -->
+
     <ul>
         <li><a href="#home">主页</a></li>
         <li><a href="#news">作业</a></li>
