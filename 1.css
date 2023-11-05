@@ -43,7 +43,7 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background-color: #bde2f4;
@@ -64,7 +64,14 @@ body {
   .sidebar a:hover {
     color: #f1f1f1;
   }
-  
+  /* 关闭按钮的位置和样式（右上角） */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
  
   
   .openbtn {
@@ -74,6 +81,8 @@ body {
     color: white;
     padding: 10px 15px;
     border: none;
+    position: fixed;
+    
   }
   
   .openbtn:hover {
@@ -83,6 +92,11 @@ body {
   #main {
     transition: margin-left .5s;
     padding: 16px;
+    margin: 0% ;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+  
   }
   
   /* 在高度小于 450px 的较小屏幕上，更改 sidenav 的样式（更少的填充和更小的字体大小）*/
@@ -105,6 +119,7 @@ body {
     width: 100%; /* 图像充满内层容器 */
     height: 100%; /* 图像充满内层容器 */
     object-fit: cover; /* 调整图像以填充整个内层容器 */
+    /* 想要与侧边栏有一定距离，设置border大小，并且颜色和背景一致 */
   }
   
   div.transbox {

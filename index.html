@@ -3,23 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>陆秋的小站</title>
     <script>
-    function openNav() {
-        var sidebar = document.getElementById("mySidebar");
-        var main = document.getElementById("main");
+    /* 设置侧边栏的宽度为250px，页面内容的左边距为250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* 设置侧边栏宽度为0，页面内容左边距为0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+let originalTitle = "陆秋的小站";
+let timeoutId;
+
+window.onblur = function () {
+  document.title = "看不见我(*/ω＼*)";
+  // 清除之前的定时器
+  clearTimeout(timeoutId);
+};
+
+window.onfocus = function () {
+  document.title = "哎呀Σ(っ °Д °;)っ";
+  // 设置一个定时器，在一定时间后将标题恢复为原始标题
+  timeoutId = setTimeout(function () {
+    document.title = originalTitle;
+  }, 2000); // 2000 毫秒，即 2 秒
   
-  if (sidebar.style.width === "250px") {
-    sidebar.style.width = "0";
-    main.style.marginLeft = "0";
-  } else {
-    sidebar.style.width = "250px";
-    main.style.marginLeft = "250px";
-  }
-    }
-
-    
-
+};
     
     </script>
     <style></style>
@@ -37,7 +51,7 @@
       </div>
 
     <div id="mySidebar" class="sidebar">
-        
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="avatar-inner">
               <img src="img/0_パンプキンワゴン_103402622_p2.jpg" alt="">
             </div>
@@ -52,7 +66,7 @@
 
     <ul>
         <li><a href="#home">主页</a></li>
-        <li><a href="#news">作业</a></li>
+        <li><a href="#news">登录</a></li>
         <li><a href="#contact">介绍</a></li>
         <li><a href="番剧.html">索引</a></li>
     </ul>
