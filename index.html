@@ -16,7 +16,7 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
-
+//标题切换
 let originalTitle = "陆秋的小站";
 let timeoutId;
 
@@ -40,13 +40,14 @@ window.onfocus = function () {
     <link rel="stylesheet" href="1.css" type="text/css">
 </head>
 <body>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button>  
+    </div>
+
     <div >
-        <div id="main">
-            <button class="openbtn" onclick="openNav()">☰</button>  
-        </div>
-         
         <div class="transbox">
           <p>你好，欢迎访问我的个人站</p>
+          <p>由于本文件托管在GitHub上，属于静态网站，所以加载图片慢</p>
         </div>
       </div>
 
@@ -65,10 +66,10 @@ window.onfocus = function () {
       
 
     <ul>
-        <li><a href="#home">主页</a></li>
+        <li><a href="index.html">主页</a></li>
         <li><a href="#news">登录</a></li>
         <li><a href="#contact">介绍</a></li>
-        <li><a href="番剧.html">索引</a></li>
+        <li><a href="番剧.html">本地番剧</a></li>
     </ul>
 
     

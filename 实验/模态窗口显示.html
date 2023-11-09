@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>点击图片放大为原图示例</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="image-container">
+        <img class="thumbnail" src="/img/四张缩略/001.jpg" alt="缩略图 1">
+        <img class="thumbnail" src="/img/四张缩略/002.jpg" alt="缩略图 2">
+        <img class="thumbnail" src="/img/四张缩略/003.jpg" alt="缩略图 2">
+        <img class="thumbnail" src="/img/四张缩略/004.jpg" alt="缩略图 4">
+    </div>
+
+    <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    const thumbnailImages = document.querySelectorAll(".thumbnail");
+    const modal = document.querySelector(".modal");
+    const modalContent = modal.querySelector(".modal-content");
+
+    thumbnailImages.forEach(function(thumbnailImage, index) {
+        thumbnailImage.addEventListener("click", function() {
+            const originalImageSrc = `/img/四张缩略/00${index + 1}.jpg`;
+            modalContent.src = originalImageSrc;
+            modal.style.display = "block";
+        });
+    });
+
+    modal.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+
+    const closeModal = modal.querySelector(".close");
+    closeModal.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+});
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* 模态窗口样式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    display: block;
+    margin: 0 auto;
+    max-width: auto;
+    max-height: 90%;
+    
+}
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* 鼠标悬停时，显示手型光标 */
+.thumbnail {
+    cursor: pointer;
+    width: 20%;
+    height: auto;/* 将原图缩小 */
+
+}

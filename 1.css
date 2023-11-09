@@ -13,7 +13,7 @@ ul {
     top: 0;
     right: 0;
     text-align: right;
-    
+    z-index: 2;
 }
 li {
     float: right;
@@ -26,7 +26,7 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
+ 
 /*鼠标移动到选项上修改背景颜色 */
 li a:hover {
   background-color:whitesmoke;
@@ -122,23 +122,27 @@ body {
     /* 想要与侧边栏有一定距离，设置border大小，并且颜色和背景一致 */
   }
   
-  div.transbox {
+  .transbox {
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 8%;
+    margin-bottom: 5%;
     background-color: #ffffff;
     border: 1px solid black;
-    opacity: 0.4;/* css中设置透明度，越小越透明，多个嵌套div才有用 */
+    opacity: 0.9;/* css中设置透明度，越小越透明，多个嵌套div才有用 */
   }
   
   div.transbox p {
     margin: 5%;
     font-weight: bold;
     color: #000000;
+    text-align: center;
+    font-size: larger;
   }
   body, html {
     height: 100%;
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
     /* 边框问题解决了 */
 }
   body {
@@ -148,4 +152,51 @@ body {
     background-repeat: no-repeat;
     
   }
+  .introduction a {
+    text-align: center;
+    text-decoration: none;
+  }
+  .span1{
+    background-color: #000;
+    width: 15px;
+    height: 15px;
+    margin: 2px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  a{
+    text-decoration: none;
+  }
+  .heimu{
+    background-color: #000;
+    transition: color 0.13s linear;
+    color: #252525;
+    text-shadow: none;
+  }
+  .img-Head{
+    height: 30%;
+    width: 30%;
+    margin-right: 10px;
+  }
+  .img-padding{
+    width: 100%; /* 设置图像宽度为100% */
+    height: auto; /* 让高度根据宽度自动调整，以保持纵横比 */
+    max-width: 80%; /* 设置最大宽度 */
+    display: block; /* 去除默认的行内元素间隙 */
+    margin: 0 auto; /* 水平居中图像 */
+  }
+  .span-font{
+    font-size: 25px;
+    text-align: center;
+    
+  }
+  .div-juzhong{
+    margin: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
   
