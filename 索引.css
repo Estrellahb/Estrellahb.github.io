@@ -1,0 +1,22 @@
+
+div.content-layout{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: left baseline;
+    border: 1px solid #9EA0A1;
+    margin: 5px;
+}
+div h3{
+    color: #4169E1;
+    font-family: Microsoft YaHei;
+    letter-spacing: 2px;
+    text-shadow: -1px -1px 1px #8F999F, 1px -1px 1px #8F999F, -1px 1px 1px #F0F8FF, 1px 1px 1px #F0F8FF;
+}
+div .grid-contain{
+    display: grid;
+
+}
+div .grid-item{
+    
+}
