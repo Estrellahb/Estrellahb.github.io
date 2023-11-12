@@ -12,11 +12,37 @@ div h3{
     font-family: Microsoft YaHei;
     letter-spacing: 2px;
     text-shadow: -1px -1px 1px #8F999F, 1px -1px 1px #8F999F, -1px 1px 1px #F0F8FF, 1px 1px 1px #F0F8FF;
+    margin-left: 10px;
 }
 div .grid-contain{
     display: grid;
+    /*grid-template-columns: repeat(4, 1fr);  3列布局，可以根据需要调整 会与媒体查询同优先级，后设置的会覆盖前者*/
+    gap: 10px; /* 网格间距，可以根据需要调整 */
+    padding: 10px;
 
 }
 div .grid-item{
-    
+    padding: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
 }
+div .grid-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  div.grid-item span{
+    color: gold;
+  }
+  /* 媒体查询，根据屏幕宽度调整列数 */
+  @media screen and (min-width: 600px) {
+    .grid-contain {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .grid-contain {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
