@@ -40,6 +40,14 @@ window.onfocus = function () {
     <link rel="stylesheet" href="1.css" type="text/css">
 </head>
 <body>
+
+    <ul>
+      <li><a href="index.html">主页</a></li>
+      <li><a href="#news">登录</a></li>
+      <li><a href="/work.html">作业</a></li>
+      <li><a href="番剧.html">本地番剧</a></li>
+    </ul>
+
     <div id="main">
       <button class="openbtn" onclick="openNav()">☰</button>  
     </div>
@@ -48,9 +56,21 @@ window.onfocus = function () {
         <div class="transbox">
           <p>你好，欢迎访问我的个人站</p>
           <p>由于本文件托管在GitHub上，服务器在境外,所以加载图片慢</p>
+          <p>推荐使用PC查看本页面，因为部分页面没做PE适配</p>
         </div>
+    </div>
+    <div >
+      <div class="transbox">
+        <p>你好，欢迎访问我的个人站</p>
+        <p>由于本文件托管在GitHub上，服务器在境外,所以加载图片慢</p>
       </div>
-
+    </div>
+    <div >
+      <div class="transbox">
+        <p>你好，欢迎访问我的个人站</p>
+        <p>由于本文件托管在GitHub上，服务器在境外,所以加载图片慢</p>
+      </div>
+    </div>
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="avatar-inner">
@@ -59,19 +79,15 @@ window.onfocus = function () {
           
         <a href="#">About</a>
         <a href="#">Services</a>
-        <a href="#">网站索引</a>
+        <a href="/侧边栏/网站索引.html">网站索引</a>
         <a href="/侧边栏/个人介绍.html">个人介绍</a>
-      </div>
+    </div>
        <!-- http://www.w3schools.cn/howto/howto_js_collapse_sidebar.asp -->
       
-
-    <ul>
-        <li><a href="index.html">主页</a></li>
-        <li><a href="#news">登录</a></li>
-        <li><a href="/work.html">作业</a></li>
-        <li><a href="番剧.html">本地番剧</a></li>
-    </ul>
+      <!-- 网页切换效果  https://www.cnblogs.com/lhb25/p/a-collection-of-page-transitions.html -->
+    <!-- 试了老久，代码看不懂，问chatgpt没明白，还是放弃吧 -->
+    
 
     
-</body>
+  </body>
 </html>

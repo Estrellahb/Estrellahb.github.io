@@ -1,17 +1,18 @@
 ul {
-    width: 75%; /* 矩形的宽度 */
+    width: 98%; /* 矩形的宽度 */
     height: 50px; /* 矩形的高度 */
     font-weight: bold; /* 设置字体加粗 */
     font-family: Arial, sans-serif; /* 选择较圆润的字体 */
     border-radius: 20px;
     list-style-type: none;
-    margin: 0;
+    margin: 5px 15px;
     padding: 0;
-    overflow: hidden;
+    
     background-color: #6db2e1;
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
+    
     text-align: right;
     z-index: 2;
 }
