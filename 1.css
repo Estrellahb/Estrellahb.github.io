@@ -83,7 +83,6 @@ body {
     padding: 10px 15px;
     border: none;
     position: fixed;
-    
   }
   
   .openbtn:hover {
@@ -97,7 +96,7 @@ body {
     width: 50px;
     height: 50px;
     position: fixed;
-  
+    z-index: 3;
   }
   
   /* 在高度小于 450px 的较小屏幕上，更改 sidenav 的样式（更少的填充和更小的字体大小）*/
@@ -133,14 +132,14 @@ body {
     text-align: center;
     opacity: 0.9;/* css中设置透明度，越小越透明，多个嵌套div才有用 */
   }
-  .transbox img{
+  .img12{
     width: 100%;
     height: auto;
     
     margin: 20px auto;
     padding: 0%;
     
-  }
+  } 
   div.transbox p {
     margin: 5%;
     font-weight: bold;

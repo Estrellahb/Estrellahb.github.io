@@ -8,13 +8,16 @@
     /* 设置侧边栏的宽度为250px，页面内容的左边距为250px */
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("main").style.display = "none";
+
 }
 
 /* 设置侧边栏宽度为0，页面内容左边距为0 */
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
+  setTimeout(function() {
+  document.getElementById("main").style.display = "block";
+  }, 300);/* 延迟300秒 */
 }
 //标题切换
 let originalTitle = "陆秋的小站";
@@ -34,7 +37,10 @@ window.onfocus = function () {
   }, 2000); // 2000 毫秒，即 2 秒
   
 };
-    
+  
+function waitLink() {
+    alert('未完待续');
+  }
     </script>
     <style></style>
     <link rel="stylesheet" href="1.css" type="text/css">
@@ -52,6 +58,19 @@ window.onfocus = function () {
       <button class="openbtn" onclick="openNav()">☰</button>  
     </div>
 
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="avatar-inner">
+            <img src="img/0_パンプキンワゴン_103402622_p2.jpg" alt="">
+          </div>
+
+      <a href="javascript:void(0)" onclick="waitLink()">GPT4</a>
+      <a href="javascript:void(0)" onclick="waitLink()">音乐播放</a>
+      <a href="/侧边栏/网站索引.html">网站索引</a>
+      <a href="/侧边栏/个人介绍.html">个人介绍</a>
+    </div>
+     <!-- http://www.w3schools.cn/howto/howto_js_collapse_sidebar.asp -->
+
     <div >
         <div class="transbox">
           <p>你好，欢迎访问我的个人站</p>
@@ -67,23 +86,12 @@ window.onfocus = function () {
     </div>
     <div >
       <div class="transbox">
-        <p><img src="img/楚门的世界.jpg"></p>
+        <p><img class="img12" src="img/楚门的世界.jpg"></p>
         <p><i>In case not to see you</i></p>
         <p><i>good morning, good afternoon, and good night!</i> </p>
       </div>
     </div>
-    <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="avatar-inner">
-              <img src="img/0_パンプキンワゴン_103402622_p2.jpg" alt="">
-            </div>
-          
-        <a href="#" id="wait">GPT4</a>
-        <a href="#">音乐播放</a>
-        <a href="/侧边栏/网站索引.html">网站索引</a>
-        <a href="/侧边栏/个人介绍.html">个人介绍</a>
-    </div>
-       <!-- http://www.w3schools.cn/howto/howto_js_collapse_sidebar.asp -->
+    
       
       <!-- 网页切换效果  https://www.cnblogs.com/lhb25/p/a-collection-of-page-transitions.html -->
     <!-- 试了老久，代码看不懂，问chatgpt没明白，还是放弃吧 -->
