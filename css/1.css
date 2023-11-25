@@ -36,9 +36,7 @@ li a:hover {
 
 
 /* 隐藏侧边栏样式 */
-body {
-    font-family: "Lato", sans-serif;
-  }
+
   
   .sidebar {
     height: 100%;
@@ -154,7 +152,7 @@ body {
     /* 边框问题解决了 */
 }
   body {
-    background-image: url('img/0_星は眠らず_87652804.png'); /* 设置背景图像的URL */
+    background-image: url('/img/0_星は眠らず_87652804.png'); /* 设置背景图像的URL */
     background-size: cover; /* 以尽可能大的尺寸覆盖整个页面 */
     background-attachment:fixed; /* 使背景图像固定，随滚动条滚动 */
     background-repeat: no-repeat;
