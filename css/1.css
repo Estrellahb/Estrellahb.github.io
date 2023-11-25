@@ -76,15 +76,15 @@ li a:hover {
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
     padding: 10px 15px;
     border: none;
     position: fixed;
   }
   
   .openbtn:hover {
-    background-color: #444;
+    background-color: #bde2f4;
   }
   
   #main {
@@ -202,7 +202,6 @@ li a:hover {
     align-items: center;
     justify-content: center;
   }
-
 
 
   
